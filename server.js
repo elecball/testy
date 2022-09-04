@@ -36,6 +36,10 @@ async function listDatabases(cli) {
     });
 }
 
+app.get("/", (req, res) => {
+    res.send("<h1>It's workingggggg 🤗</h1>")
+});
+
 app.get("/test", (req, res) => {
     res.send("<h1>It's working 🤗</h1>")
 });
