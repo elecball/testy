@@ -36,6 +36,10 @@ async function listDatabases(cli) {
     });
 }
 
+app.get("/test", (req, res) => {
+    res.send("<h1>It's working 🤗</h1>")
+});
+
 app.listen(8000, () => {
     console.log("server started on port 8000");
 });
